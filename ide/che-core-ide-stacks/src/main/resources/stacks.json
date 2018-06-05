@@ -6,7 +6,10 @@
     "description": "Che development + Theia in a sidecar container (docker)",
     "scope": "general",
     "tags": [
-      "Java 1.8, Theia"
+      "Java 1.8",
+      "Theia",
+      "Alpine",
+      "CentOS"
     ],
     "workspaceConfig": {
       "environments": {
@@ -75,7 +78,10 @@
     "description": "Che development + Theia in a sidecar container (openshift)",
     "scope": "general",
     "tags": [
-      "Java 1.8, Theia"
+      "Java 1.8",
+      "Theia",
+      "Alpine",
+      "CentOS"
     ],
     "workspaceConfig": {
       "environments": {
@@ -142,25 +148,12 @@
     "id": "java-centos-mysql",
     "creator": "ide",
     "name": "Java-MySQL CentOS",
-    "description": "Multi-machine environment with Java CentOS Stack and MySQL database",
+    "description": "Multi-machine environment with Java CentOS and MySQL database",
     "scope": "advanced",
     "tags": [
       "Java 1.8, Tomcat 8, MySQL 5.7"
     ],
-    "components": [
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -231,20 +224,7 @@
     "tags": [
       "Java 1.8, Tomcat 8, MySQL 5.7"
     ],
-    "components": [
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -316,24 +296,10 @@
       "JDK",
       "Maven",
       "Tomcat",
-      "Subversion",
       "Ubuntu",
       "Git"
     ],
-    "components": [
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -396,8 +362,7 @@
     "tags": [
       "Blank",
       "Ubuntu",
-      "Git",
-      "Subversion"
+      "Git"
     ],
     "components": [],
     "workspaceConfig": {
@@ -415,10 +380,6 @@
                 },
                 "tomcat8-debug" : {
                   "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
                   "protocol" : "http"
                 }
               },
@@ -446,27 +407,14 @@
     "id": "android-default",
     "creator": "ide",
     "name": "Android",
-    "description": "Default Android Stack with Java 1.8, Maven 3.2.3, Android (21 api level).",
+    "description": "Default Android Stack with Java 1.8 and Android SDK",
     "scope": "general",
     "tags": [
       "Android",
-      "Ubuntu",
+      "CentOS",
       "Git"
     ],
-    "components": [
-      {
-        "name": "Android",
-        "version": "21"
-      },
-      {
-        "name": "Java",
-        "version": "1.8"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.3"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -477,7 +425,7 @@
               ],
               "servers": {
                 "VNC" : {
-                  "port" : "6080",
+                  "port" : "6091",
                   "protocol" : "http"
                 }
               },
@@ -487,7 +435,7 @@
             }
           },
           "recipe": {
-            "content": "eclipse/ubuntu_android",
+            "content": "eclipse/android",
             "type": "dockerimage"
           }
         }
@@ -525,20 +473,7 @@
       "Ubuntu",
       "Git"
     ],
-    "components": [
-      {
-        "name": "CPP",
-        "version": "4.8.4"
-      },
-      {
-        "name": "gcc",
-        "version": "4.8.4"
-      },
-      {
-        "name": "Make",
-        "version": "3.81"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -583,23 +518,14 @@
     "id": "dotnet-default",
     "creator": "ide",
     "name": ".NET",
-    "description": "Default .NET 2.0 Stack with .NET Core SDK",
+    "description": "Default .NET 2.0.0 Stack with .NET Core SDK",
     "scope": "general",
     "tags": [
       "Ubuntu",
-      "dotnet",
+      "Dotnet",
       "Git"
     ],
-    "components": [
-      {
-        "name": "Ubuntu",
-        "version": "16.04"
-      },
-      {
-        "name": ".NET Core SDK",
-        "version": "2.0.0-preview2-006497"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -664,16 +590,7 @@
       "Ubuntu",
       "Go"
     ],
-    "components": [
-      {
-        "name": "Ubuntu",
-        "version": "14.04"
-      },
-      {
-        "name": "Go",
-        "version": "1.8.3"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -720,78 +637,10 @@
     }
   },
   {
-    "id": "hadoop-default",
-    "creator": "ide",
-    "name": "Hadoop",
-    "description": "Default Hadoop Stack with JDK 8, Maven and Tomcat.",
-    "scope": "advanced",
-    "tags": [
-      "Hadoop"
-    ],
-    "components": [
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      },
-      {
-        "name": "Hadoop"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {
-                "tomcat8" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "tomcat8-debug" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
-                  "protocol" : "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/hadoop-dev",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null
-    },
-    "stackIcon": {
-      "name": "type-hadoop.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
     "id": "node-default",
     "creator": "ide",
     "name": "Node",
-    "description": "Default Node Stack with Node 7.",
+    "description": "Default Node Stack with Node 8",
     "scope": "general",
     "tags": [
       "Ubuntu",
@@ -805,32 +654,7 @@
       "Angular",
       "Karma"
     ],
-    "components": [
-      {
-        "name": "Node.JS",
-        "version": "7.7.3"
-      },
-      {
-        "name": "NPM",
-        "version": "4.4.1"
-      },
-      {
-        "name": "Gulp",
-        "version": "3.9.1"
-      },
-      {
-        "name": "Bower",
-        "version": "1.8.0"
-      },
-      {
-        "name": "Grunt",
-        "version": "1.2.0"
-      },
-      {
-        "name": "Yeoman",
-        "version": "1.8.5"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -888,28 +712,7 @@
       "Apache",
       "dockerimager"
     ],
-    "components": [
-      {
-        "name": "PHP",
-        "version": "7.0"
-      },
-      {
-        "name": "Apache",
-        "version": "2"
-      },
-      {
-        "name": "MySQL",
-        "version": "---"
-      },
-      {
-        "name": "Sqlite",
-        "version": "---"
-      },
-      {
-        "name": "dockerimager",
-        "version": "---"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1000,132 +803,6 @@
     }
   },
   {
-    "id": "php5.6-default",
-    "creator": "ide",
-    "name": "PHP-5.6",
-    "description": "Default PHP Stack with PHP 5.6, most popular extensions.",
-    "scope": "advanced",
-    "tags": [
-      "Ubuntu",
-      "Git",
-      "PHP",
-      "mysql",
-      "sqlite",
-      "Apache",
-      "dockerimager"
-    ],
-    "components": [
-      {
-        "name": "PHP",
-        "version": "5.6"
-      },
-      {
-        "name": "Apache",
-        "version": "2"
-      },
-      {
-        "name": "MySQL",
-        "version": "---"
-      },
-      {
-        "name": "Sqlite",
-        "version": "---"
-      },
-      {
-        "name": "dockerimager",
-        "version": "---"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent", "org.eclipse.che.ls.php"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                },
-                "80/tcp": {
-                  "port": "80",
-                  "protocol": "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/php:5.6",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run php script",
-          "type": "custom",
-          "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || php ${editor.current.file.path}",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "debug php script",
-          "type": "custom",
-          "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || QUERY_STRING=\"start_debug=1&debug_host=localhost&debug_port=10137\" php ${editor.current.file.path}",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Debug"
-          }
-        },
-        {
-          "name": "start apache",
-          "type": "custom",
-          "commandLine": "service apache2 start && tail -f /var/log/apache2/access.log -f /var/log/apache2/error.log",
-          "attributes": {
-            "previewUrl": "${server.80/tcp}/${current.project.relpath}",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "stop apache",
-          "type": "custom",
-          "commandLine": "service apache2 stop",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "restart apache",
-          "type": "custom",
-          "commandLine": "service apache2 restart",
-          "attributes": {
-            "previewUrl": "${server.80/tcp}/${current.project.relpath}",
-            "goal": "Run"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-php.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
     "id": "python-default",
     "creator": "ide",
     "name": "Python",
@@ -1137,16 +814,7 @@
       "Ubuntu",
       "Git"
     ],
-    "components": [
-      {
-        "name": "Python",
-        "version": "3.5.1"
-      },
-      {
-        "name": "pip",
-        "version": "8.1.1"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1209,20 +877,7 @@
       "Ubuntu",
       "Git"
     ],
-    "components": [
-      {
-        "name": "Ruby",
-        "version": "2.3.0"
-      },
-      {
-        "name": "Rails",
-        "version": "4.2.6"
-      },
-      {
-        "name": "Bundler",
-        "version": "1.11.2"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1278,92 +933,6 @@
     }
   },
   {
-    "id": "debian",
-    "creator": "ide",
-    "name": "Debian",
-    "description": "Simple stack with Debian (Jessie).",
-    "scope": "advanced",
-    "tags": [
-      "Debian"
-    ],
-    "components": [
-      {
-        "name": "Debian",
-        "version": "Jessie"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {},
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/debian_jdk8",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null
-    }
-  },
-  {
-    "id": "debianlsp",
-    "creator": "ide",
-    "name": "Debian LSP",
-    "description": "Simple stack with Debian (Jessie) to test LSP",
-    "scope": "advanced",
-    "tags": [
-      "Debian",
-      "LSP"
-    ],
-    "components": [
-      {
-        "name": "Debian",
-        "version": "Jessie"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec",
-                "org.eclipse.che.terminal",
-                "org.eclipse.che.ws-agent",
-                "org.eclipse.che.ls.csharp",
-                "org.eclipse.che.ls.json",
-                "org.eclipse.che.ls.php"
-              ],
-              "servers": {},
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/debian_jdk8",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null
-    }
-  },
-  {
     "id": "java-centos",
     "creator": "ide",
     "name": "Java CentOS",
@@ -1377,24 +946,7 @@
       "CentOS",
       "Git"
     ],
-    "components": [
-      {
-        "name": "CentOS",
-        "version": "---"
-      },
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1445,385 +997,6 @@
     }
   },
   {
-    "id": "java-debian",
-    "creator": "ide",
-    "name": "Java Debian",
-    "description": "Java JDK Stack on Debian.",
-    "scope": "advanced",
-    "tags": [
-      "Java",
-      "JDK",
-      "Maven",
-      "Tomcat",
-      "Debian",
-      "Git"
-    ],
-    "components": [
-      {
-        "name": "Debian",
-        "version": "jessie"
-      },
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "Tomcat",
-        "version": "8.0.24"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {},
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/debian_jdk8",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "commandLine": "mvn clean install -f ${current.project.path}",
-          "name": "build",
-          "type": "mvn",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Build"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-java.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "php-gae",
-    "creator": "ide",
-    "name": "PHP GAE",
-    "description": "Default PHP Stack with PHP 5.5 and PHP GAE SDK 1.9.37.",
-    "scope": "advanced",
-    "tags": [
-      "PHP-GAE"
-    ],
-    "components": [
-      {
-        "name": "PHP",
-        "version": "5.5.9"
-      },
-      {
-        "name": "Apache",
-        "version": "2"
-      },
-      {
-        "name": "GAE SDK",
-        "version": "1.9.37"
-      },
-      {
-        "name": "MySQL",
-        "version": "---"
-      },
-      {
-        "name": "Sqlite",
-        "version": "---"
-      },
-      {
-        "name": "dockerimager",
-        "version": "---"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent", "org.eclipse.che.ls.php", "org.eclipse.che.ls.json"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/php:gae",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run",
-          "type": "custom",
-          "commandLine": "cd /home/user/google_appengine/dev_appserver.py 2>&1 --php_executable_path=/usr/bin/php-cgi7.0 --skip_sdk_update_check true --host=0.0.0.0 --admin_host=0.0.0.0 ${current.project.path}",
-          "attributes": {
-            "previewUrl": "${server.8080/tcp}",
-            "goal": "Run"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-php.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "python-2.7",
-    "creator": "ide",
-    "name": "Python 2.7",
-    "description": "Default Python Stack with Python 2.7.11, pip 8.1.1.",
-    "scope": "advanced",
-    "tags": [
-      "Python 2.7",
-      "pip",
-      "Ubuntu",
-      "Git"
-    ],
-    "components": [
-      {
-        "name": "Python",
-        "version": "2.7.11"
-      },
-      {
-        "name": "pip",
-        "version": "8.1.1"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent", "org.eclipse.che.ls.python"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/ubuntu_python:2.7",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run",
-          "type": "custom",
-          "commandLine": "cd ${current.project.path} && sudo virtualenv /env && sudo pip install -r requirements.txt && python main.py",
-          "attributes": {
-            "previewUrl": "${server.8080/tcp}",
-            "goal": "Run"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-python.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "python-gae",
-    "creator": "ide",
-    "name": "Python GAE",
-    "description": "Default Python Stack with Python 2.7, Python GAE SDK 1.9.37.",
-    "scope": "advanced",
-    "tags": [
-      "Python-GAE"
-    ],
-    "components": [
-      {
-        "name": "Python",
-        "version": "3.5.1"
-      },
-      {
-        "name": "GAE SDK",
-        "version": "1.9.37"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent", "org.eclipse.che.ls.python"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/ubuntu_python:gae_python2.7",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run",
-          "type": "custom",
-          "commandLine": "cd ${GAE} && ./dev_appserver.py 2>&1 --skip_sdk_update_check true --host=0.0.0.0 --admin_host=0.0.0.0 ${current.project.path}",
-          "attributes": {
-            "previewUrl": "${server.8080/tcp}",
-            "goal": "Run"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-python.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "selenium",
-    "creator": "ide",
-    "name": "Selenium",
-    "description": "Stack with Selenium and Chrome on Ubuntu.",
-    "scope": "advanced",
-    "tags": [
-      "Selenium",
-      "Ubuntu",
-      "Chrome",
-      "noVNC",
-      "xserver",
-      "blackbox",
-      "webdriver",
-      "x11vnc"
-    ],
-    "components": [
-      {
-        "name": "noVNC",
-        "version": "---"
-      },
-      {
-        "name": "Selenium webdriver",
-        "version": "---"
-      },
-      {
-        "name": "Google Chrome",
-        "version": "---"
-      },
-      {
-        "name": "Blackbox",
-        "version": "---"
-      },
-      {
-        "name": "Supervisor",
-        "version": "---"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                },
-                "4444/tcp" : {
-                  "port" : "4444",
-                  "protocol" : "tcp"
-                },
-                "6080/tcp" : {
-                  "port" : "6080",
-                  "protocol" : "tcp"
-                },
-                "32745/tcp" : {
-                  "port" : "32745",
-                  "protocol" : "tcp"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/selenium",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null
-    }
-  },
-  {
     "id": "tomee-default",
     "creator": "tomitribe",
     "name": "TomEE",
@@ -1832,20 +1005,7 @@
     "tags": [
       "TomEE"
     ],
-    "components": [
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.2.2"
-      },
-      {
-        "name": "TomEE",
-        "version": "1.7.3"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1904,12 +1064,7 @@
     "tags": [
       "Ubuntu"
     ],
-    "components": [
-      {
-        "name": "Ubuntu",
-        "version": "---"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1936,240 +1091,6 @@
     }
   },
   {
-    "id": "zend",
-    "creator": "ide",
-    "name": "Zend",
-    "description": "Zend stack with PHP 7, Zend Server 9 and Z-Ray.",
-    "scope": "advanced",
-    "tags": [
-      "PHP",
-      "Zend",
-      "Z-Ray",
-      "Composer",
-      "Ubuntu",
-      "Git"
-    ],
-    "components": [
-      {
-        "name": "PHP",
-        "version": "7.0.11"
-      },
-      {
-        "name": "Zend Server",
-        "version": "9.0.1"
-      },
-      {
-        "name": "Composer",
-        "version": "---"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent", "org.eclipse.che.ls.php", "org.eclipse.che.ls.json"
-              ],
-              "servers": {
-                "80/tcp" : {
-                  "port" : "80",
-                  "protocol" : "http"
-                },
-                "443/tcp" : {
-                  "port" : "443",
-                  "protocol" : "http"
-                },
-                "10081/tcp" : {
-                  "port" : "10081",
-                  "protocol" : "tcp"
-                },
-                "10082/tcp" : {
-                  "port" : "10082",
-                  "protocol" : "tcp"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "kaloyanraev/che-zendserver",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run php script",
-          "type": "custom",
-          "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || php ${editor.current.file.path}",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "debug php script",
-          "type": "custom",
-          "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || QUERY_STRING=\"start_debug=1&debug_host=localhost&debug_port=10137\" php ${editor.current.file.path}",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Debug"
-          }
-        },
-        {
-          "name": "restart zend server",
-          "type": "custom",
-          "commandLine": "sudo sqlite3 /usr/local/zend/var/db/zsd.db \"UPDATE ZSD_DIRECTIVES SET DISK_VALUE='http://${server.port.10081}/ZendServer' WHERE NAME='zray.zendserver_ui_url'\" && sudo sed -i 's#zray.zendserver_ui_url=.*#zray.zendserver_ui_url=http://${server.port.10081}/ZendServer#g' /usr/local/zend/etc/conf.d/zray.ini && sudo /usr/local/zend/bin/zendctl.sh restart",
-          "attributes": {
-            "previewUrl": "${server.80/tcp}",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "stop zend server",
-          "type": "custom",
-          "commandLine": "sudo /usr/local/zend/bin/zendctl.sh stop",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "show admin password",
-          "type": "custom",
-          "commandLine": "echo \"Zend Server admin password is `sudo cat /root/zend-password`\"",
-          "attributes": {
-            "previewUrl": "${server.10081/tcp}",
-            "goal": ""
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-zend.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "platformio",
-    "creator": "ide",
-    "name": "PlatformIO",
-    "description": "Stack for IoT development",
-    "scope": "general",
-    "tags": [
-      "PlatformIO",
-      "IoT",
-      "embedded",
-      "arduino",
-      "mbed"
-    ],
-    "components": [
-      {
-        "name": "Python",
-        "version": "2.7"
-      },
-      {
-        "name": "pip",
-        "version": "8.1.1"
-      },
-      {
-        "name": "PlatformIO",
-        "version": "3.2.0"
-      }
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {
-                "8080/tcp" : {
-                  "port" : "8080",
-                  "protocol" : "http"
-                },
-                "8000/tcp" : {
-                  "port" : "8000",
-                  "protocol" : "http"
-                }
-              },
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/platformio:latest",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "name": "run",
-          "type": "custom",
-          "commandLine": "pio run -d ${current.project.path}",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "upload",
-          "type": "custom",
-          "commandLine": "pio run -d ${current.project.path} -t upload",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        },
-        {
-          "name": "clean",
-          "type": "custom",
-          "commandLine": "pio run -d ${current.project.path} -t clean",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Build"
-          }
-        },
-        {
-          "name": "Remote: Device list",
-          "type": "custom",
-          "commandLine": "pio remote device list",
-          "attributes": {
-            "previewUrl": "",
-            "goal": ""
-          }
-        },
-        {
-          "name": "Remote: Upload",
-          "type": "custom",
-          "commandLine": "pio remote run -d ${current.project.path} -t upload",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Run"
-          }
-        }
-      ]
-    },
-    "stackIcon": {
-      "name": "type-python.svg",
-      "mediaType": "image/svg+xml"
-    }
-  },
-  {
     "id": "vert.x",
     "creator": "Clement Escoffier",
     "name": "Eclipse Vert.x",
@@ -2183,16 +1104,7 @@
       "CentOS",
       "Git"
     ],
-    "components": [{
-      "name": "CentOS",
-      "version": "---"
-    }, {
-      "name": "JDK",
-      "version": "1.8.0_45"
-    }, {
-      "name": "Maven",
-      "version": "3.2.2"
-    }],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -2210,10 +1122,6 @@
                 },
                 "tomcat8-debug" : {
                   "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
                   "protocol" : "http"
                 },
                 "vertx-debug" : {
@@ -2280,20 +1188,7 @@
       "CentOS",
       "Git"
     ],
-    "components": [
-      {
-        "name": "CentOS",
-        "version": "---"
-      },
-      {
-        "name": "JDK",
-        "version": "1.8.0"
-      },
-      {
-        "name": "Maven",
-        "version": "3.3"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "name": "default",
       "defaultEnv": "default",
@@ -2449,20 +1344,7 @@
       "defaultEnv": "default",
       "links": []
     },
-    "components": [
-      {
-        "name": "CentOS",
-        "version": "---"
-      },
-      {
-        "name": "JDK",
-        "version": "1.8.0_45"
-      },
-      {
-        "name": "Maven",
-        "version": "3.3.9"
-      }
-    ]
+    "components": []
   },
   {
     "name": "CentOS nodejs",
@@ -2536,33 +1418,8 @@
       "defaultEnv": "default",
       "links": []
     },
-    "components": [
-      {
-        "name": "Node.JS",
-        "version": "---"
-      },
-      {
-        "name": "NPM",
-        "version": "---"
-      },
-      {
-        "name": "Gulp",
-        "version": "---"
-      },
-      {
-        "name": "Bower",
-        "version": "---"
-      },
-      {
-        "name": "Grunt",
-        "version": "---"
-      },
-      {
-        "name": "Yeoman",
-        "version": "---"
-      }
-    ],
-    "creator": "Dharmit Shah"
+    "components": [],
+    "creator": "ide"
   },
   {
     "id": "kotlin-default",
@@ -2603,7 +1460,7 @@
 },
 {
     "id": "centos-go",
-    "creator": "Dharmit Shah",
+    "creator": "ide",
     "name": "CentOS Go",
     "description": "CentOS based Go Stack",
     "scope": "advanced",
@@ -2611,16 +1468,7 @@
       "CentOS",
       "Go"
     ],
-    "components": [
-      {
-        "name": "CentOS",
-        "version": "7.3"
-      },
-      {
-        "name": "Go",
-        "version": "1.6.2"
-      }
-    ],
+    "components": [],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -2668,15 +1516,14 @@
   },
   {
   "id": "centos",
-  "creator": "Dharmit Shah",
+  "creator": "ide",
   "name": "CentOS blank",
   "description": "CentOS Blank Stack",
   "scope": "advanced",
   "tags": [
     "Blank",
     "CentOS",
-    "Git",
-    "Subversion"
+    "Git"
   ],
   "components": [],
   "workspaceConfig": {
@@ -2716,36 +1563,7 @@
     "scope": "advanced",
     "name": "Ceylon with Java JavaScript Dart on CentOS",
     "id": "ceylon-java-javascript-dart-centos",
-    "components": [
-      {
-        "version": "---",
-        "name": "CentOS"
-      },
-      {
-        "version": "1.8.0_131",
-        "name": "JDK"
-      },
-      {
-        "version": "3.3.9",
-        "name": "Maven"
-      },
-      {
-        "version": "8.0.24",
-        "name": "Tomcat"
-      },
-      {
-        "version": "1.3.2",
-        "name": "Ceylon"
-      },
-      {
-        "version": "1.24.2",
-        "name": "Dart SDK"
-      },
-      {
-        "version": "6.11.1",
-        "name": "NodeJS"
-      }
-    ],
+    "components": [],
     "tags": [
       "Java",
       "JDK",
@@ -2866,96 +1684,6 @@
     "stackIcon": {
       "name": "type-ceylon.svg",
       "mediaType": "image/svg+xml"
-    }
-  },
-  {
-    "id": "openshift-default",
-    "name": "Openshift Default",
-    "description": "Openshift Single Pod Workspace",
-    "scope": "general",
-    "tags": [
-      "Openshift"
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "app/main": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {
-                "web": {
-                  "protocol": "http",
-                  "port": "8080/tcp"
-                }
-              }
-            }
-          },
-          "recipe": {
-            "content": "kind: List\nitems:\n-\n  apiVersion: v1\n  kind: Pod\n  metadata:\n    name: app\n  spec:\n    containers:\n      -\n        image: rhche/centos_jdk8:latest\n        name: main\n        ports:\n          -\n            containerPort: 8080\n            protocol: TCP",
-            "contentType": "application/x-yaml",
-            "type": "openshift"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": []
-    }
-  },
-  {
-    "id": "openshift-sql",
-    "name": "Openshift Sql",
-    "description": "Openshift Multi Pod Workspace",
-    "scope": "general",
-    "tags": [
-      "Openshift"
-    ],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "web/main": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {
-                "web": {
-                  "protocol": "http",
-                  "port": "8080/tcp"
-                }
-              }
-            },
-            "db/main": {
-              "installers": [
-                "org.eclipse.che.terminal"
-              ],
-              "servers": {}
-            }
-          },
-          "recipe": {
-            "content": "---\nkind: List\nitems:\n-\n  apiVersion: v1\n  kind: Pod\n  metadata:\n    name: web\n  spec:\n    containers:\n      -\n        image: rhche/centos_jdk8:latest\n        name: main\n        ports:\n          -\n            containerPort: 8080\n            protocol: TCP\n-\n  apiVersion: v1\n  kind: Pod\n  metadata:\n    name: db\n    labels:\n      type: db\n  spec:\n    containers:\n      -\n        image: centos/mysql-57-centos7\n        name: main\n        ports:\n          -\n            name: mysql\n            containerPort: 3306\n            protocol: TCP\n        env:\n          - \n            name: MYSQL_USER\n            value: 'petclinic'\n          - \n            name: MYSQL_ROOT_PASSWORD\n            value: 'password'\n          - \n            name: MYSQL_PASSWORD\n            value: 'password'\n          - \n            name: MYSQL_DATABASE\n            value: 'petclinic'\n\n-\n  apiVersion: v1\n  kind: Service\n  metadata:\n    name: db\n  spec:\n    selector:\n      type: db\n    ports:\n      - name: mysql\n        port: 3306\n        protocol: TCP\n        targetPort: mysql",
-            "contentType": "application/x-yaml",
-            "type": "openshift"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null,
-      "commands": [
-        {
-          "commandLine": "mvn clean install -f ${current.project.path}",
-          "name": "build",
-          "type": "mvn",
-          "attributes": {
-            "previewUrl": "",
-            "goal": "Build"
-          }
-        }
-      ]
     }
   }
 ]
