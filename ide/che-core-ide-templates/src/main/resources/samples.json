@@ -480,7 +480,7 @@
     "problems": [],
     "source": {
       "type": "git",
-      "location": "https://github.com/patternfly/angular-patternfly-demo-app.git",
+      "location": "https://github.com/che-samples/angular-patternfly-demo-app.git",
       "parameters": {}
     },
     "commands": [
@@ -496,9 +496,9 @@
       {
         "name": "run",
         "type": "custom",
-        "commandLine": "cd ${current.project.path} \ngrunt server",
+        "commandLine": "cd ${current.project.path} \ngrunt server --force",
         "attributes": {
-          "previewUrl": "${server.angular}",
+          "previewUrl": "${server.3000/tcp}",
           "goal": "Run"
         }
       }
