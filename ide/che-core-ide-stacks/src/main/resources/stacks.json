@@ -584,7 +584,7 @@
     "id": "go-default",
     "creator": "ide",
     "name": "Go",
-    "description": "Default Go Stack with Go 1.8.3",
+    "description": "Default Go Stack with Go 1.10.2",
     "scope": "general",
     "tags": [
       "Ubuntu",
@@ -1425,7 +1425,7 @@
     "id": "kotlin-default",
     "creator": "ide",
     "name": "Kotlin",
-    "description": "Ubuntu based stack with Kotlin",
+    "description": "Ubuntu based stack with Kotlin 1.2.50-eap-62",
     "scope": "advanced",
     "tags": [
       "Kotlin",
