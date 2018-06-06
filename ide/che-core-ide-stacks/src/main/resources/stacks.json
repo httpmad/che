@@ -1328,7 +1328,7 @@
             "previewUrl": "",
             "goal": "Build"
           },
-          "commandLine": "scl enable rh-maven33 'mvn clean install -f ${current.project.path}'"
+          "commandLine": "export MAVEN_OPTS='-Xms20m'\nscl enable rh-maven33 'mvn clean install -f ${current.project.path} -DskipTests'"
         },
         {
           "name": "run",
@@ -1337,7 +1337,7 @@
             "previewUrl": "${server.wildfly}",
             "goal": "Run"
           },
-          "commandLine": "cd ${current.project.path} && scl enable rh-maven33 'java -jar target/*-swarm.jar'"
+          "commandLine": "cd ${current.project.path}\nscl enable rh-maven33 'java -jar target/*-swarm.jar -Djava.net.preferIPv4Stack=true'"
         }
       ],
       "projects": [],
