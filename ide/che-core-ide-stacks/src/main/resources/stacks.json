@@ -868,7 +868,7 @@
     "id": "rails-default",
     "creator": "ide",
     "name": "Rails",
-    "description": "Default Rails Stack with Ruby 2.3.0, Rails 4.2.6, Bundler 1.11.2.",
+    "description": "Default Rails Stack with Ruby 2.4.4, Rails 5.0.1, Bundler 1.16.2.",
     "scope": "general",
     "tags": [
       "Ruby",
