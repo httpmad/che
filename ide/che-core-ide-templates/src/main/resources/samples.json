@@ -241,7 +241,7 @@
     "displayName": "web-go-simple",
     "path": "/web-go-simple",
     "description": "Simple Go Hello World.",
-    "projectType": "blank",
+    "projectType": "golang",
     "mixins": [],
     "attributes": {
       "language": [
