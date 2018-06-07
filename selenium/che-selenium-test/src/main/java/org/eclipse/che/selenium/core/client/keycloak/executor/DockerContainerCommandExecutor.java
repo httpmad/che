@@ -36,7 +36,7 @@ public class DockerContainerCommandExecutor implements KeycloakCommandExecutor {
       obtainKeycloakContainerId();
     }
 
-    String dockerCommand = format("docker exec -i %s sh -c '%s'", keycloakContainerId, command);
+    String dockerCommand = format("docker exec -i %s sh -c 'keycloak/bin/kcadm.sh %s'", keycloakContainerId, command);
     return processAgent.process(dockerCommand);
   }
 
