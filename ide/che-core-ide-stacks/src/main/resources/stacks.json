@@ -224,7 +224,28 @@
     "tags": [
       "Java 1.8, Tomcat 8, MySQL 5.7"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "JDK",
+        "version": "1.8.0_162"
+      },
+      {
+        "name": "Maven",
+        "version": "3.3.9"
+      },
+      {
+        "name": "Tomcat",
+        "version": "8.0.24"
+      },
+      {
+        "name": "MySQL",
+        "version": "5.7.19"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -295,11 +316,26 @@
       "Java",
       "JDK",
       "Maven",
-      "Tomcat",
-      "Ubuntu",
-      "Git"
+      "Tomcat"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "JDK",
+        "version": "1.8.0_162"
+      },
+      {
+        "name": "Maven",
+        "version": "3.3.9"
+      },
+      {
+        "name": "Tomcat",
+        "version": "8.0.24"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -364,7 +400,24 @@
       "Ubuntu",
       "Git"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "JDK",
+        "version": "1.8.0_162"
+      },
+      {
+        "name": "Maven",
+        "version": "3.3.9"
+      },
+      {
+        "name": "Tomcat",
+        "version": "8.0.24"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -410,11 +463,26 @@
     "description": "Default Android Stack with Java 1.8 and Android SDK",
     "scope": "general",
     "tags": [
-      "Android",
-      "CentOS",
-      "Git"
+      "Android"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Centos",
+        "version": "7"
+      },
+      {
+        "name": "JDK",
+        "version": "1.8.0_144"
+      },
+      {
+        "name": "Maven",
+        "version": "3.5.3"
+      },
+      {
+        "name": "Android API",
+        "version": "21"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -469,11 +537,30 @@
     "tags": [
       "C++",
       "gcc",
-      "make",
-      "Ubuntu",
-      "Git"
+      "make"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "JDK",
+        "version": "1.8.0_162"
+      },
+      {
+        "name": "G++",
+        "version": "5.4.0"
+      },
+      {
+        "name": "GCC",
+        "version": "5.4.0"
+      },
+      {
+        "name": "Make",
+        "version": "4.1"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -521,11 +608,18 @@
     "description": "Default .NET 2.0.0 Stack with .NET Core SDK",
     "scope": "general",
     "tags": [
-      "Ubuntu",
-      "Dotnet",
-      "Git"
+      "Dotnet"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Dotnet",
+        "version": "2.0.0"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -587,10 +681,18 @@
     "description": "Default Go Stack with Go 1.10.2",
     "scope": "general",
     "tags": [
-      "Ubuntu",
       "Go"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Go",
+        "version": "1.10.2"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -643,8 +745,6 @@
     "description": "Default Node Stack with Node 8",
     "scope": "general",
     "tags": [
-      "Ubuntu",
-      "Git",
       "Node.JS",
       "NPM",
       "Gulp",
@@ -654,7 +754,24 @@
       "Angular",
       "Karma"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "NodeJS",
+        "version": "8.11.2"
+      },
+      {
+        "name": "NPM",
+        "version": "5.6.0"
+      },
+      {
+        "name": "Typerscript",
+        "version": "2.8.3"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -704,15 +821,37 @@
     "description": "Default PHP Stack with PHP 7.0, most popular extensions.",
     "scope": "general",
     "tags": [
-      "Ubuntu",
-      "Git",
       "PHP",
       "mysql",
       "sqlite",
-      "Apache",
-      "dockerimager"
+      "Apache"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "PHP",
+        "version": "7.0.30"
+      },
+      {
+        "name": "Composer",
+        "version": "1.6.5"
+      },
+      {
+        "name": "MySQL",
+        "version": "5.7.22"
+      },
+      {
+        "name": "Zend Debugger",
+        "version": "9.0.1"
+      },
+      {
+        "name": "Apache",
+        "version": "2.4.18"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -810,11 +949,22 @@
     "scope": "general",
     "tags": [
       "Python 3.5",
-      "pip",
-      "Ubuntu",
-      "Git"
+      "pip"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Python",
+        "version": "3.5.1"
+      },
+      {
+        "name": "PIP",
+        "version": "10.0.1"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -873,11 +1023,26 @@
     "tags": [
       "Ruby",
       "Rails",
-      "Bundler",
-      "Ubuntu",
-      "Git"
+      "Bundler"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Ruby",
+        "version": "2.4.4"
+      },
+      {
+        "name": "Rails",
+        "version": "5.0.1"
+      },
+      {
+        "name": "Bundler",
+        "version": "1.16.2"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -941,12 +1106,18 @@
     "tags": [
       "Java",
       "JDK",
-      "Maven",
-      "Tomcat",
-      "CentOS",
-      "Git"
+      "Maven"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Centos",
+        "version": "7"
+      },
+      {
+        "name": "OpenJDK",
+        "version": "1.8.0_144"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1005,7 +1176,20 @@
     "tags": [
       "TomEE"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Maven",
+        "version": "3.3.9"
+      },
+      {
+        "name": "TomEE",
+        "version": "1.7.3"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1056,55 +1240,31 @@
     }
   },
   {
-    "id": "ubuntu",
-    "creator": "ide",
-    "name": "Ubuntu",
-    "description": "Simple stack with Ubuntu (latest).",
-    "scope": "advanced",
-    "tags": [
-      "Ubuntu"
-    ],
-    "components": [],
-    "workspaceConfig": {
-      "environments": {
-        "default": {
-          "machines": {
-            "dev-machine": {
-              "installers": [
-                "org.eclipse.che.exec", "org.eclipse.che.terminal", "org.eclipse.che.ws-agent"
-              ],
-              "servers": {},
-              "attributes" : {
-                "memoryLimitBytes": "2147483648"
-              }
-            }
-          },
-          "recipe": {
-            "content": "eclipse/ubuntu_jdk8",
-            "type": "dockerimage"
-          }
-        }
-      },
-      "name": "default",
-      "defaultEnv": "default",
-      "description": null
-    }
-  },
-  {
     "id": "vert.x",
     "creator": "Clement Escoffier",
     "name": "Eclipse Vert.x",
-    "description": "Eclipse Vert.x Stack on CentOS.",
+    "description": "Eclipse Vert.x Stack on CentOS with OpenJDK and Maven",
     "scope": "advanced",
     "tags": [
       "Java",
       "JDK",
       "Maven",
-      "Vert.x",
-      "CentOS",
-      "Git"
+      "Vert.x"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "CentOS",
+        "version": "7"
+      },
+      {
+        "name": "OpenJDK",
+        "version": "1.8.0_161"
+      },
+      {
+        "name": "RH-Maven",
+        "version": "3.3.9"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1184,11 +1344,22 @@
       "Java",
       "JDK",
       "Maven",
-      "Spring Boot",
-      "CentOS",
-      "Git"
+      "Spring Boot"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "CentOS",
+        "version": "7"
+      },
+      {
+        "name": "OpenJDK",
+        "version": "1.8.0_161"
+      },
+      {
+        "name": "RH-Maven",
+        "version": "3.3.9"
+      }
+    ],
     "workspaceConfig": {
       "name": "default",
       "defaultEnv": "default",
@@ -1212,10 +1383,6 @@
                 },
                 "tomcat8-debug" : {
                   "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
                   "protocol" : "http"
                 }
               },
@@ -1281,8 +1448,21 @@
       "JDK",
       "Maven",
       "WildFly Swarm",
-      "CentOS",
-      "Git"
+      "CentOS"
+    ],
+    "components": [
+      {
+        "name": "CentOS",
+        "version": "7"
+      },
+      {
+        "name": "OpenJDK",
+        "version": "1.8.0_161"
+      },
+      {
+        "name": "RH-Maven",
+        "version": "3.3.9"
+      }
     ],
     "workspaceConfig": {
       "name": "default",
@@ -1309,10 +1489,6 @@
                 },
                 "tomcat8-debug" : {
                   "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
                   "protocol" : "http"
                 }
               }
@@ -1343,12 +1519,11 @@
       "projects": [],
       "defaultEnv": "default",
       "links": []
-    },
-    "components": []
+    }
   },
   {
     "name": "CentOS nodejs",
-    "id": "nodejs4",
+    "id": "nodejs6",
     "scope": "advanced",
     "description": "CentOS Node Stack",
     "tags": [
@@ -1411,14 +1586,35 @@
             "goal": "Run",
             "previewUrl": "${server.8080/tcp}"
           },
-          "commandLine": "cd ${current.project.path} && scl enable rh-nodejs4 'node app.js'"
+          "commandLine": "cd ${current.project.path} && scl enable rh-nodejs6 'node app.js'"
         }
       ],
       "projects": [],
       "defaultEnv": "default",
       "links": []
     },
-    "components": [],
+    "components": [
+      {
+        "name": "CentOS",
+        "version": "7"
+      },
+      {
+        "name": "OpenJDK",
+        "version": "1.8.0_161"
+      },
+      {
+        "name": "RH-Maven",
+        "version": "3.3.9"
+      },
+      {
+        "name": "NodeJS",
+        "version": "6.11.3"
+      },
+      {
+        "name": "NPM",
+        "version": "3.10.9"
+      }
+    ],
     "creator": "ide"
   },
   {
@@ -1429,10 +1625,18 @@
     "scope": "advanced",
     "tags": [
       "Kotlin",
-      "Ubuntu",
-      "Git"
+      "Ubuntu"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Ubuntu",
+        "version": "16.04"
+      },
+      {
+        "name": "Kotlin",
+        "version": "1.2.50-eap-62"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1468,7 +1672,16 @@
       "CentOS",
       "Go"
     ],
-    "components": [],
+    "components": [
+      {
+        "name": "Centos",
+        "version": "7"
+      },
+      {
+        "name": "Golang",
+        "version": "1.9.4"
+      }
+    ],
     "workspaceConfig": {
       "environments": {
         "default": {
@@ -1522,10 +1735,18 @@
   "scope": "advanced",
   "tags": [
     "Blank",
-    "CentOS",
-    "Git"
+    "CentOS"
   ],
-  "components": [],
+  "components": [
+    {
+      "name": "Centos",
+      "version": "7"
+    },
+    {
+      "name": "OpenJDK",
+      "version": "1.8.0_161"
+    }
+  ],
   "workspaceConfig": {
     "environments": {
       "default": {
@@ -1563,14 +1784,17 @@
     "scope": "advanced",
     "name": "Ceylon with Java JavaScript Dart on CentOS",
     "id": "ceylon-java-javascript-dart-centos",
-    "components": [],
+    "components": [
+      {
+        "name": "Centos",
+        "version": "7"
+      },
+      {
+        "name": "Ceylon",
+        "version": "1.3.2"
+      }
+    ],
     "tags": [
-      "Java",
-      "JDK",
-      "Maven",
-      "Tomcat",
-      "CentOS",
-      "Git",
       "Ceylon",
       "Dart"
     ],
@@ -1590,10 +1814,6 @@
                 },
                 "tomcat8-debug" : {
                   "port" : "8000",
-                  "protocol" : "http"
-                },
-                "codeserver" : {
-                  "port" : "9876",
                   "protocol" : "http"
                 }
               },
